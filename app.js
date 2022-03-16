@@ -116,23 +116,102 @@ const contacts = [
 
 
 // 잘 이해 안간다 이거 //
-const GreaterThan = (num) =>{
-    return (testNumber) => num < testNumber;
-}
+// const GreaterThan = (num) =>{
+//     return (testNumber) => num < testNumber;
+// }
 
-const GreaterThan100 = GreaterThan(100);
-// const GreaterThan100 = (testNumber) => 100 < testNumber;
+// const GreaterThan100 = GreaterThan(100);
+// // const GreaterThan100 = (testNumber) => 100 < testNumber;
 
-console.log(GreaterThan100(50));
+// console.log(GreaterThan100(50));
 
 
 
-for (let { name, email } of contacts) {
-	console.log(name, email);
-}
+// for (let { name, email } of contacts) {
+// 	console.log(name, email);
+// }
 
-let [first, second] = contacts;
-let [firstPer, ,thirdPer] = contacts;
+// let [first, second] = contacts;
+// let [firstPer, ,thirdPer] = contacts;
 
-console.log(first, second);
-console.log(firstPer, thirdPer);
+// console.log(first, second);
+// console.log(firstPer, thirdPer);
+
+
+// console.log(contacts)
+// console.log(...contacts)
+
+// let arraychange = {...contacts}
+
+
+
+// let car = {
+//     type: "fiat",
+//     model: '500',
+//     color: 'red',
+//     drive: function(){
+//         return this.type + " is now in drive!"
+//     }
+// }
+
+// console.log(car.drive())
+
+
+
+// let Person = {
+//     fname: null,
+//     age: null,
+// };
+
+// let ben = Object.create(Person);
+// ben.fname = "Ben";
+
+// console.log(ben);
+// console.log(ben.fname)
+
+
+// class Person {
+//     constructor(name, age) {
+//         this.fname = name;
+//         this.age = age;
+//     }
+//     greeting() {
+//         return `Hello! I'm ${this.fname}`
+//     }
+// }
+
+// let ben = new Person("Ben", 25);
+// console.log(ben.fname, ben.age);
+// console.log(ben);
+// console.log(ben.greeting());
+
+
+// class Coder extends Person{
+//     constructor(name, age, languages){
+//         super(name, age);
+//         this.languages = languages;
+//     }
+//     speak() {
+//         console.log("Coder Class");
+//     }
+// }
+
+// const newPerson = new Person("Ben", 25);
+
+// const newCoder = new Coder("Simon", 32);
+
+// newCoder.languages = ['JavaScript']
+
+// newCoder.languages; 
+
+// newPerson.speak();
+// newCoder.speak();
+
+
+let fname = {name : 'Ben'};
+
+const f2name = fname;
+
+fname.name = "Tanner";
+
+console.log(fname, f2name );
